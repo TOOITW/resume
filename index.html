@@ -59,12 +59,15 @@
         flex-direction: column;
         margin-bottom: 20px;
       }
-      .image-section{
+      .image-section {
         display: flex;
-        align-items: center;
-        justify-content: space-around;
-        flex-direction: row;
-        margin-bottom: 20px;}
+
+        justify-content: space-image-section;
+      }
+
+      .contact-info {
+        flex: 1;
+      }
     </style>
   </head>
   <body>
@@ -72,11 +75,13 @@
       <h1>Chen-Yuan Chang, 張鎮遠</h1>
       <div class="section profile">
         <div class="image-section">
-          <p>
-            聯絡方式: <br />
-            電子郵件: evereasy21@gmail.com <br />
-            手機: 0985985170
-          </p>
+          <div class="contact-info">
+            <p>
+              聯絡方式: <br />
+              電子郵件: evereasy21@gmail.com <br />
+              手機: 0985985170
+            </p>
+          </div>
           <img
             src="4987108A-FC59-47DE-965C-7FE64B0F8226.jpg"
             class="resume-image"
