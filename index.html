@@ -1,249 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>個人履歷</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 20px;
-      }
-      .container {
-        max-width: 800px;
-        margin: 0 auto;
-      }
-      h1,
-      h2 {
-        text-align: center;
-      }
-      .section {
-        margin-bottom: 20px;
-      }
-      .section h2 {
-        border-bottom: 2px solid #000;
-        padding-bottom: 5px;
-      }
-      .job-title {
-        font-weight: bold;
-        font-size: 1.2em;
-      }
-      .company {
-        font-style: italic;
-        color: #555;
-      }
-      .job-duration {
-        color: #777;
-      }
-      ul {
-        list-style-type: square;
-      }
-      .tag {
-        display: inline-block;
-        padding: 2px 8px;
-        margin: 2px;
-        background-color: #889498f5;
-        color: white;
-        border-radius: 4px;
-        font-size: 0.8em;
-      }
-      .resume-image {
-        width: 100px; /* 調整為你需要的寬度 */
-        height: auto; /* 保持圖片的比例 */
-      }
-      .profile {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        margin-bottom: 20px;
-      }
-      .image-section {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;  /* 新增的行 */
-      }
-
-      .contact-info {
-        flex: 1;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <h1>Chen-Yuan Chang, 張鎮遠</h1>
-      <div class="section profile">
-        <div class="image-section">
-          <div class="contact-info">
-            <p>
-              聯絡方式: <br />
-              電子郵件: evereasy21@gmail.com <br />
-            </p>
-          </div>
-          <img
-            src="1D15047E-7A4A-4FA9-AD4F-1AD18985BEAA.jpg"
-            class="resume-image"
-            alt="resume photo"
-          />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>個人履歷</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: white;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1,
+    h2 {
+      text-align: center;
+      color: #2c3e50;
+    }
+    .section {
+      margin-bottom: 20px;
+    }
+    .section h2 {
+      border-bottom: 2px solid #2c3e50;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+    }
+    .job-title {
+      font-weight: bold;
+      font-size: 1.2em;
+      color: #2980b9;
+    }
+    .company {
+      font-style: italic;
+      color: #555;
+    }
+    .job-duration {
+      color: #777;
+    }
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+    .tag {
+      display: inline-block;
+      padding: 5px 10px;
+      margin: 5px;
+      background-color: #3498db;
+      color: white;
+      border-radius: 4px;
+      font-size: 0.9em;
+    }
+    .resume-image {
+      width: 100px;
+      height: auto;
+      border-radius: 50%;
+    }
+    .profile {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row;
+      margin-bottom: 20px;
+    }
+    .contact-info {
+      flex: 1;
+      padding: 10px;
+    }
+    .image-section {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Chen-Yuan Chang, 張鎮遠</h1>
+    <div class="section profile">
+      <div class="image-section">
+        <div class="contact-info">
+          <p>
+            聯絡方式: <br />
+            電子郵件: evereasy21@gmail.com <br />
+          </p>
         </div>
-
-        <h2>自介</h2>
-        <p>我是一個充滿熱情的軟體工程師，
-            樂於接受挑戰並不斷追求卓越。
-            我的樂觀思維和堅韌性格，讓我在面對困難時不會輕易放棄。
-            我喜歡學習新技術，尤其對寫code有極大的熱情，
-            這使我能夠迅速掌握並應用最新的技術來解決複雜的問題。
-            我重視良好的溝通、友善的職場氣氛、妥善的專案進度排程，並兼顧到網站的穩定性。
-        </p>
+        <img src="1D15047E-7A4A-4FA9-AD4F-1AD18985BEAA.jpg" class="resume-image" alt="resume photo" />
       </div>
 
-      <div class="section">
-        <h2>工作經驗</h2>
-        <div>
-          <p class="job-title">
-            辰銘資訊有限公司, Site Reliability Engineer 網站可靠性工程師
-          </p>
-          <p class="job-duration">July 2022 ~ March 2024</p>
-          <p>負責項目:</p>
-          <p>
-            <span class="tag">#Linux</span>
-            <span class="tag">#Docker</span>
-            <span class="tag">#Ansible</span>
-            <span class="tag">#K8S</span>
-            <span class="tag">#Laravel</span>
-            <span class="tag">#Vue</span>
-            <span class="tag">#GCP</span>
-            <span class="tag">#Selenium</span>
-          </p>
-          <ul>
-            <li>
-              自動化部署和運維：在團隊指導下，參與維護和優化自動化部署流程。
-              執行日常運維任務和故障診斷，排查網站問題等。
-            </li>
-            <li>
-              後台管理與API整合： 使用Vue.js 2和PHP開發用戶友好的後台管理界面。
-              實現了Matomo API的自動化集成，提高了數據分析的效率。
-            </li>
-            <li>
-              Java和Selenium實現自動化爬蟲截圖並與AWS S3
-              API的整合，自動化了圖片上傳流程。
-            </li>
-            <li>網站域名DNS、CDN設定，異常排查。</li>
-            <li>
-              自動化與協作經驗：編寫Ansible腳本，實現域名檢查和Jenkins、Docker、Harbor等服務的部署。
-            </li>
-            <li>與QA、API開發團隊緊密合作，共同開發和測試新功能。</li>
-            <li>
-              雲平台與容器化：在GCP和AWS上搭建和維護虛擬機，並有建立Docker
-              Swarm集群的實戰經驗。
-            </li>
-            <li>使用GitLab實現CI/CD的流程，並成功與Kubernetes集群整合。</li>
-            <li>
-              在Google Cloud Platform (GCP) 和 Microsoft Azure
-              上部署和管理虛擬機集群的實戰經驗。
-            </li>
-            <li>
-              內容分發與DNS管理：具有使用Cloudflare和AWS
-              CloudFront實施內容分發網路(CDN)解決方案的實際操作經驗。
-            </li>
-            <li>領導與危機管理：擔任團隊小組長，指導新成員熟悉業務流程。</li>
-            <li>雲服務：了解AWS服務，主要為EC2, S3, CloudFront。</li>
-            <li>
-              容器化技術：了解Docker及Docker
-              Swarm，並有使用Portainer進行容器管理的實踐經驗。
-            </li>
-            <li>版本控制：掌握Git的基本操作。 CI/CD流程</li>
-          </ul>
-          <p>技能和技術工具:</p>
-          <ul>
-            <li>後端語言:擅長使用Java，python及php具有基本操作經驗。</li>
-            <li>Vue2</li>
-            <li>基礎Linux操作及ansible,harbor,portainer的操作經驗</li>
-          </ul>
-        </div>
-
-        <div>
-          <p class="job-title">明瑞資通科技股份有限公司, 軟體工程師</p>
-          <p class="job-duration">May 2021~ June 2022</p>
-          <ul>
-            <li>
-              王道銀行:
-              負責項目：負責開發測試串接前後端API、串接電文(WebService)
-            </li>
-            <li>
-              政府採購網:
-              負責項目：根據使用者(行政院工程委員會)需求，針對政府採購網進行重構、開發、測試
-            </li>
-          </ul>
-          <p>
-            <span class="tag">#Spring</span>
-            <span class="tag">#Boot</span>
-            <span class="tag">#Java</span>
-            <span class="tag">#SQL</span>
-            <span class="tag">#jQuery</span>
-            <span class="tag">#Git</span>
-          </p>
-
-          <p class="job-title">緯創軟體股份有限公司, 軟體工程師</p>
-          <p class="job-duration">Sep 2020 ~ Apr 2021</p>
-          <ul>
-            <li>國泰人壽系統協助開發</li>
-            <li>
-              系統概述：開發壽險系統，系統主要分為理賠系統、商品屬性、保全系統、會計系統、付款系統..等，
-            </li>
-            <li>
-              實作方式：開發工具為IBM
-              WebSphere，開發語言為java，使用的framework主要為eBaf，前端使用jQuery、jsp、javascript等，版本控制軟體使用SourceTree
-              Git，使用的資料庫為DB2 Database，主要做前後端程式設計。
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <p class="job-title">大林慈濟醫院, 產學合作研究員</p>
-          <p class="job-duration">Sep 2018 ~ Aug 2020</p>
-          <ul>
-            <li>與大林慈濟醫院合作專案，開發中醫資訊系統</li>
-            <li>
-              根據中醫師的問題需求，開發系統功能，學習到如何根據客戶需求與回應
-            </li>
-            <li>與計畫人員合作，學習到如何與團隊合作進行系統開發</li>
-            <li>維護系統程式，學習到追蹤程式碼問題、解決問題</li>
-          </ul>
-          <p>
-            <span class="tag">#JavaScript</span>
-            <span class="tag">#MySQL</span>
-            <span class="tag">#軟體程式設計</span>
-            <span class="tag">#MVC</span>
-            <span class="tag">#Java</span>
-            <span class="tag">#Git</span>
-          </p>
-        </div>
-
-        <div>
-          <p class="job-title">國立中正大學, 專案研究人員</p>
-          <p class="job-duration">Sep 2018 ~ Aug 2020</p>
-          <p>嘉義縣民雄鄉</p>
-          <ul>
-            <li>
-              開發中醫資訊系統，系統為一個網站系統，主要分為中醫辨證、中醫方劑配伍、中醫針灸等，承接中醫師需求進行系統功能設計開發。
-            </li>
-            <li>
-              實作方式：開發工具為Eclipse，開發語言為java，使用的framework為基本的MVC，前端使用jQuery、JavaScript、CSS、Bootstrap等，版本控制軟體使用SourceTree，使用的資料庫為MySQL
-              Server，撰寫後台API供前台呼叫及前後端程式設計。
-            </li>
-          </ul>
-          <p>
-            <span class="tag">#Java</span>
-            <span class="tag">#jQuery</span>
-            <span class="tag">#MySQL</span>
-            <span class="tag">#Git</span>
-            <span class="tag">#Linux</span>
-            <span class="tag">#軟體工程系統開發</span>
-          </p>
-        </div>
-      </div>
+      <h2>自介</h2>
+      <p>我是一個充滿熱情的軟體工程師，樂於接受挑戰並不斷追求卓越。我的樂觀思維和堅韌性格，讓我在面對困難時不會輕易放棄。我喜歡學習新技術，尤其對寫code有極大的熱情，這使我能夠迅速掌握並應用最新的技術來解決複雜的問題。我重視良好的溝通、友善的職場氣氛、妥善的專案進度排程，並兼顧到網站的穩定性。</p>
     </div>
-  </body>
-</html>
+
+    <div class="section">
+      <h2>工作經驗</h2>
+      <div>
+        <p class="job-title">辰銘資訊有限公司, Site Reliability Engineer 網站可靠性工程師</p>
+        <p class="job-duration">July 2022 ~ March 2024</p>
+        <p>負責項目:</p>
+        <p>
+          <span class="tag">#Linux</span>
+          <span class="tag">#Docker</span>
+          <span class="tag">#Ansible</span>
+          <span class="tag">#K8S</span>
+          <span class="tag">#Laravel</span>
+          <span class="tag">#Vue</span>
+          <span class="tag">#GCP</span>
+          <span class="tag">#Selenium</span>
+        </p>
+        <ul>
+          <li>自動化部署和運維：在團隊指導下，參與維護和優化自動化部署流程。執行日常運維任務和故障診斷，排查網站問題等。</li>
+          <li>後台管理與API整合： 使用Vue.js 2和PHP開發用戶友好的後台管理界面。實現了Matomo API的自動化集成，提高了數據分析的效率。</li>
+          <li>Java和Selenium實現自動化爬蟲截圖並與AWS S3 API的整合，自動化了圖片上傳流程。</li>
+          <li>網站域名DNS、CDN設定，異常排查。</li>
+          <li>自動化與協作經驗：編寫Ansible腳本，實現域名檢查和Jenkins、Docker、Harbor等服務的部署。</li>
+          <li>與QA、API開發團隊緊密合作，共同開發和測試新功能。</li>
+          <li>雲平台與容器化：在GCP和AWS上搭建和維護虛擬機，並有建立Docker Swarm集群的實戰經驗。</li>
+          <li>使用GitLab實現CI/CD的流程，並成功與Kubernetes集群整合。</li>
+          <li>在Google Cloud Platform (GCP) 和 Microsoft Azure 上部署和管理虛擬機集群的實戰經驗。</li>
+          <li>內容分發與DNS管理：具有使用Cloudflare和AWS CloudFront實施內容分發網路(CDN)解決方案的實際操作經驗。</li>
+          <li>領導與危機管理：擔任團隊小組長，指導新成員熟悉業務流程。</li>
+          <li>雲服務：了解AWS服務，主要為EC2, S3, CloudFront。</li>
+          <li>容器化技術：了解Docker及Docker Swarm，並有使用Portainer進行容器管理的實踐經驗。</li>
+          <li>版本控制：掌握Git的基本操作。 CI/CD流程</li>
+        </ul>
+        <p>技能和技術工具:</p>
+        <ul>
+          <li>後端語言:擅長使用Java，python及php具有基本操作經驗。</li>
+          <li>Vue2</li>
+          <li>基礎Linux操作及ansible,harbor,portainer的操作經驗</li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="job-title">明瑞資通科技股份有限公司, 軟體工程
